@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra, Papel y Tijeras</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<main>	
+	<div id="gameBoard">
+		<div id="scoreBoard-wrap">
+			<div class="scoreBoard">
+				<div class="players-wrap">
+					<div class="name-players" id="name-player1">-</div>
+					<div class="score-players" id="score-player1">Score: 0</div>
+				</div>
+				<div class="players-wrap">
+					<div class="score-players" id="score-player2">Score: 0</div>
+					<div class="name-players" id="name-player2">PC</div>
+				</div>
+			</div>
+		</div>
+		<div class="side-gb left-gb">
+			<div class="option-selected" id="option-selected-player1">
+				🤔
+			</div>
+		</div>
+		<div class="side-gb right-gb">
+			<div class="option-selected" id="option-selected-player2">
+				🤔
+			</div>
+		</div>
+		<div id="selectorOptionsBoard-wrap">
+			<h3>Selecciona tu mano</h3>
+			<div class="selectorOptionsBoard">
+				<div><button type="button" value="0" class="btn-option">👊</button></div>
+				<div><button type="button" value="1" class="btn-option">🤚</button></div>
+				<div><button type="button" value="2" class="btn-option">✌️</button></div>
+			</div>
+		</div>
+
+		<div class="popup-bg" id="result-popup">
+			<div class="popup">
+				<h3 id="win-player"></h3>
+			</div>
+		</div>
+
+		<div class="popup-bg" id="start-popup">
+			<div class="popup">
+				<div>
+					<h3>Ingresa tu nombre</h3>
+				</div>
+				<div>
+					<input type="text" id="name-player" maxlength="10" autofocus>
+				</div>
+				<div>
+					<button type="button" class="play-btn" id="play">Jugar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</main>
+</body>
+</html>
